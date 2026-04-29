@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Fawry</title>
+</head>
+<body>
+
+<h2>Pay with Fawry</h2>
+
+<button onclick="openApp()">Open Payment</button>
+
+<script>
+function openApp() {
+    const appUrl = "fpay://www.myfawry.com/other/fawryPayData?btc=788&refNumber=9615360171";
+    const fallbackUrl = "https://www.myfawry.com";
+
+    window.location.href = appUrl;
+
+    setTimeout(() => {
+        window.location.href = fallbackUrl;
+    }, 2000);
+}
+</script>
+
+</body>
+</html>
