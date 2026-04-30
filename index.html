@@ -77,10 +77,24 @@
 
 <script>
 function openApp() {
-    const appUrl =
-        "fpay://www.myfawry.com/other/fawryPayData?btc=788&refNumber=9615590720&btcType=POST&sourceAr=Super%20J&sourceEn=Super%20J&logo=https%3A%2F%2Fwww.atfawry.com%2FECommerceWeb400000014670%2Fmerchant-logo%2Fmerchant-logo.png&returnUrl=myfawry&merchantCode=400000014671";
 
-    window.location.href = appUrl;
+    const intentUrl =
+        "intent://www.myfawry.com/other/fawryPayData" +
+        "?btc=788" +
+        "&refNumber=9615590720" +
+        "&btcType=POST" +
+        "&sourceAr=Super%20J" +
+        "&sourceEn=Super%20J" +
+        "&logo=https%3A%2F%2Fwww.atfawry.com%2FECommerceWeb400000014670%2Fmerchant-logo%2Fmerchant-logo.png" +
+        "&returnUrl=myfawry" +
+        "&merchantCode=400000014671" +
+        "#Intent;" +
+        "scheme=fpay;" +
+        "package=com.fawry.app;" +
+        "S.browser_fallback_url=https%3A%2F%2Fpay.myfawry.com;" +
+        "end";
+
+    window.location.href = intentUrl;
 }
 </script>
 
