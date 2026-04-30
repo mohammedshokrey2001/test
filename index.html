@@ -82,8 +82,16 @@ function openApp() {
     "https://play.google.com/store/apps/details?id=com.fawry.myfawry"
   );
   const intentUrl =
-    "intent://www.myfawry.com/other/fawryPayData?btc=788&refNumber=9615360171&btcType=POST&sourceAr=Super%20J&sourceEn=Super%20J&logo=https%3A%2F%2Fwww.atfawry.com%2FECommerceWeb400000014670%2Fmerchant-logo%2Fmerchant-logo.png&returnUrl=myfawry&merchantCode=400000014671" +
-    "#Intent;scheme=fpay;package=com.fawry.myfawry;S.browser_fallback_url=" + fallback + ";end";
+     "www.myfawry.com/other/fawryPayData" +
+    "?btc=788" +
+    "&refNumber=9615360171" +
+    "&btcType=POST" +
+    "&sourceAr=Super%20J" +
+    "&sourceEn=Super%20J" +
+    "&logo=https%3A%2F%2Fwww.atfawry.com%2FECommerceWeb400000014670%2Fmerchant-logo%2Fmerchant-logo.png" +
+    "&returnUrl=myfawry" +
+    "&merchantCode=400000014671";
+";
   window.location.href = intentUrl;
 
 }
